@@ -16,7 +16,7 @@ cd Sophus
 mkdir build
 cd build
 cmake ..
-make -j4
+make -j[num_of_cores_to_compile]
 sudo make install
 ```
 
@@ -28,7 +28,7 @@ cd icp
 mkdir build
 cd build
 cmake .. -DENABLE_EXAMPLES=ON
-make -j4
+make -j[num_of_cores_to_compile]
 sudo make install
 ```
 
