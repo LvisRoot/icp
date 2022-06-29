@@ -37,7 +37,7 @@ set( CMAKE_EXPORT_COMPILE_COMMANDS 1 )
 # include_directories(${COMMON_INCLUDES}) in other CMakeLists.txt files.
 # set(COMMON_INCLUDES ${PROJECT_SOURCE_DIR}/include)
 find_package(Eigen3 REQUIRED)
-
+find_package(fmt)
 find_package(PCL 1.7.2 REQUIRED COMPONENTS common io features visualization)
 add_definitions(${PCL_DEFINITIONS})
 
@@ -67,6 +67,7 @@ set(LIBRARIES
   ${PCL_IO_LIBRARIES}
   ${PCL_FEATURES_LIBRARIES}
   ${PCL_VISUALIZATION_LIBRARIES}
+  fmt::fmt
   )
 
 if(ENABLE_GLOG)
