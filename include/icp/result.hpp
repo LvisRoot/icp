@@ -12,7 +12,7 @@
 
 #include <vector>
 #include <Eigen/Core>
-#include <boost/optional.hpp>
+#include <boost/optional/optional_io.hpp>
 
 #define DEFINE_RESULT_TYPES(Scalar, Suffix) \
   typedef IcpResults_<Scalar> IcpResults##Suffix;
